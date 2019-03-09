@@ -1,0 +1,24 @@
+//Append to URL (security token) ?access_token=1234~MyCanvasToken
+
+//All courses
+GET /api/v1/courses
+//Specific course
+GET /api/v1/courses/:course_id
+
+//All users in course
+GET /api/v1/courses/:course_id/users
+//Specific users in course
+GET /api/v1/courses/:course_id/users/:id
+
+//All discussion topics
+GET /api/v1/courses/:course_id/discussion_topics
+//Specific discussion topic
+GET /api/v1/courses/:course_id/discussion_topics/:topic_id
+
+//All discussion entries
+GET /api/v1/courses/:course_id/discussion_topics/:topic_id/entry_list
+//Specific discussion entry
+GET /api/v1/courses/:course_id/discussion_topics/:topic_id/entries/:entry_id
+
+//All discussion entry replies
+GET /api/v1/courses/:course_id/discussion_topics/:topic_id/entries/:entry_id/replies
